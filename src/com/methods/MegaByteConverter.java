@@ -1,4 +1,4 @@
-package com;
+package com.methods;
 
 public class MegaByteConverter {
 

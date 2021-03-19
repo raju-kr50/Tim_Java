@@ -1,4 +1,4 @@
-package com;
+package com.methods;
 
 public class AreaCalculator {
     public static void main(String[] args) {

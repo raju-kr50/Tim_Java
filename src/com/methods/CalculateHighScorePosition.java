@@ -1,6 +1,6 @@
-package com;
+package com.methods;
 
-public class Method {
+public class CalculateHighScorePosition {
     public static void main(String[] args) {
 
         int highScore = calculateScore(true, 800, 5, 100);
