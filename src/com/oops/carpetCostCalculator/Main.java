@@ -11,5 +11,6 @@ public class Main {
         floor = new Floor(5.4, 4.5);
         calculator = new Calculator(floor, carpet);
         System.out.println("Total = " + calculator.getTotalCost());
+
     }
 }
