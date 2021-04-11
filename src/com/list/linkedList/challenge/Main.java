@@ -18,7 +18,7 @@ public class Main {
     // started tracking the direction we were going.
     // As an optional extra, provide an option to remove the current song from the playlist
     // (hint: listiterator.remove()
-    private static ArrayList<Album> albums = new ArrayList<>();
+    private static List<Album> albums = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -46,7 +46,7 @@ public class Main {
         album.addSong("Night of the long knives", 5.12);
         albums.add(album);
 
-        LinkedList<Song> playList = new LinkedList<>();
+        List<Song> playList = new ArrayList<>();
         albums.get(0).addToPlayList("You can't do it right", playList);
         albums.get(0).addToPlayList("Holy man", playList);
         albums.get(0).addToPlayList("Speed king", playList);  // Does not exist
@@ -60,7 +60,7 @@ public class Main {
         play(playList);
     }
 
-    private static void play(LinkedList<Song> playList) {
+    private static void play(List<Song> playList) {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean forward = true;
@@ -158,7 +158,7 @@ public class Main {
         System.out.println("Choose your action: ");
     }
 
-    private static void printList(LinkedList<Song> playlist) {
+    private static void printList(List<Song> playlist) {
         Iterator<Song> iterator = playlist.iterator();
         System.out.println("==============================");
         while (iterator.hasNext()) {
@@ -166,4 +166,6 @@ public class Main {
         }
         System.out.println("==============================");
     }
+
+
 }

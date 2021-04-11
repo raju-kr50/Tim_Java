@@ -34,7 +34,7 @@ public class Album {
         return null;
     }
 
-    public boolean addToPlayList(String title, LinkedList<Song> playlist) {
+    public boolean addToPlayList(String title, List<Song> playlist) {
         Song song = findSong(title);
         if (song != null) {
             playlist.add(song);
@@ -44,7 +44,7 @@ public class Album {
         return false;
     }
 
-    public boolean addToPlayList(int trackNumber, LinkedList<Song> playlist) {
+    public boolean addToPlayList(int trackNumber, List<Song> playlist) {
         int index = trackNumber - 1;
         if ((index >= 0) && (index <= this.songs.size())) {
             playlist.add(this.songs.get(index));
